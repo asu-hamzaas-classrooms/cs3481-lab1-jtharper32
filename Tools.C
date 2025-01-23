@@ -220,7 +220,9 @@ uint64_t Tools::copyBits(uint64_t source, uint64_t dest, int32_t srclow, int32_t
  *               the source otherwise.
  */
 uint64_t Tools::setByte(uint64_t source, int32_t byteNum) {
-    return source | ((uint64_t)(byteNum < 8) * (0xFFULL << (byteNum * 8)));
+    uint64_t valid = (byteNum & (~7)) == 0;
+    uint64_t mask = 0xFFULL << (byteNum * 8);
+    return source | (valid * mask);
 }
 
 
