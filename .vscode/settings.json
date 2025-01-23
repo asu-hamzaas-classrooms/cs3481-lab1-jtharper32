@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "main.C": "cpp",
+        "Tools.C": "cpp"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/u/css/harperjt/github-classroom/asu-hamzaas-classrooms/cs3481-lab1-jtharper32",
+            "binaryPath": "/u/css/harperjt/github-classroom/asu-hamzaas-classrooms/cs3481-lab1-jtharper32/lab1",
+            "binaryArgs": []
+        }
+    ]
+}
